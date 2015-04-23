@@ -31,6 +31,8 @@ private:
 private:
     CameraControl* _cameraControl;
     Camera3D* _camera;
+    Label *_labelPos, *_labelRot;
+    
     DrawNode3D* _drawNode;
     std::vector<Player*> _players;
     Octree _octree;

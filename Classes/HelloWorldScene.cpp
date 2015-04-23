@@ -53,6 +53,15 @@ void HelloWorld::initCamera()
     addChild(_cameraControl);
     _cameraControl->setCamera(_camera);
 
+    _labelPos = Label::createWithSystemFont("", "Arial", 24);
+    _labelPos->setAnchorPoint(Vec2::ZERO);
+    addChild(_labelPos);
+    _labelPos->setPosition(Vec2(0, 100));
+    
+    _labelRot = Label::createWithSystemFont("", "Arial", 24);
+    _labelRot->setAnchorPoint(Vec2::ZERO);
+    addChild(_labelRot);
+    _labelRot->setPosition(Vec2(0, 130));
 }
 
 void HelloWorld::initGrid()
@@ -112,7 +121,7 @@ void HelloWorld::initGrid()
 void HelloWorld::initPlayers()
 {
     _octree.setAABB(AABB(Vec3(-5, 0, -5), Vec3(5, 10, 5)));
-    for (int i=0; i<20; ++i)
+    for (int i=0; i<40; ++i)
     {
         auto player = Player::create();
         addChild(player);
@@ -127,10 +136,14 @@ void HelloWorld::initPlayers()
 void HelloWorld::update(float delta)
 {
     auto pos = _camera->getPosition3D();
+    _labelPos->setString(CCString::createWithFormat("%.2f,%.2f,%.2f", pos.x, pos.y, pos.z)->getCString());
+    auto rot = _camera->getRotation3D();
+    _labelRot->setString(CCString::createWithFormat("%.2f,%.2f,%.2f", rot.x, rot.y, rot.z)->getCString());
+    
     _cameraAABB = AABB(pos - Vec3(1, 1, 1), pos + Vec3(1, 1, 1));
     std::vector<MoveObject*> players;
     _octree.query(players, _cameraAABB);
-    CCLOG("%d", (int)players.size());
+    CCLOG("have %d node insert", (int)players.size());
     
     for (int i=0; i<_players.size(); ++i)
     {
