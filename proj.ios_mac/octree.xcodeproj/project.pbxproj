@@ -63,8 +63,8 @@
 		F528A1731AE9065D0064DC69 /* CameraControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F528A1641AE9065D0064DC69 /* CameraControl.cpp */; };
 		F528A1741AE9065D0064DC69 /* DrawNode3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F528A1661AE9065D0064DC69 /* DrawNode3D.cpp */; };
 		F528A1751AE9065D0064DC69 /* DrawNode3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F528A1661AE9065D0064DC69 /* DrawNode3D.cpp */; };
-		F528A1761AE9065D0064DC69 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F528A1681AE9065D0064DC69 /* HelloWorldScene.cpp */; };
-		F528A1771AE9065D0064DC69 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F528A1681AE9065D0064DC69 /* HelloWorldScene.cpp */; };
+		F528A1761AE9065D0064DC69 /* OctreeTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F528A1681AE9065D0064DC69 /* OctreeTest.cpp */; };
+		F528A1771AE9065D0064DC69 /* OctreeTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F528A1681AE9065D0064DC69 /* OctreeTest.cpp */; };
 		F528A1781AE9065D0064DC69 /* Octree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F528A16A1AE9065D0064DC69 /* Octree.cpp */; };
 		F528A1791AE9065D0064DC69 /* Octree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F528A16A1AE9065D0064DC69 /* Octree.cpp */; };
 		F528A17A1AE9065D0064DC69 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F528A16C1AE9065D0064DC69 /* Player.cpp */; };
@@ -135,8 +135,8 @@
 		F528A1651AE9065D0064DC69 /* CameraControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraControl.h; sourceTree = "<group>"; };
 		F528A1661AE9065D0064DC69 /* DrawNode3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DrawNode3D.cpp; sourceTree = "<group>"; };
 		F528A1671AE9065D0064DC69 /* DrawNode3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawNode3D.h; sourceTree = "<group>"; };
-		F528A1681AE9065D0064DC69 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
-		F528A1691AE9065D0064DC69 /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
+		F528A1681AE9065D0064DC69 /* OctreeTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OctreeTest.cpp; sourceTree = "<group>"; };
+		F528A1691AE9065D0064DC69 /* OctreeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OctreeTest.h; sourceTree = "<group>"; };
 		F528A16A1AE9065D0064DC69 /* Octree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Octree.cpp; sourceTree = "<group>"; };
 		F528A16B1AE9065D0064DC69 /* Octree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Octree.h; sourceTree = "<group>"; };
 		F528A16C1AE9065D0064DC69 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
@@ -279,8 +279,8 @@
 				F528A1651AE9065D0064DC69 /* CameraControl.h */,
 				F528A1661AE9065D0064DC69 /* DrawNode3D.cpp */,
 				F528A1671AE9065D0064DC69 /* DrawNode3D.h */,
-				F528A1681AE9065D0064DC69 /* HelloWorldScene.cpp */,
-				F528A1691AE9065D0064DC69 /* HelloWorldScene.h */,
+				F528A1681AE9065D0064DC69 /* OctreeTest.cpp */,
+				F528A1691AE9065D0064DC69 /* OctreeTest.h */,
 				F528A16A1AE9065D0064DC69 /* Octree.cpp */,
 				F528A16B1AE9065D0064DC69 /* Octree.h */,
 				F528A16C1AE9065D0064DC69 /* Player.cpp */,
@@ -388,7 +388,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0610;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = 6T9739K9DY;
@@ -469,7 +469,7 @@
 				F528A17A1AE9065D0064DC69 /* Player.cpp in Sources */,
 				F528A1701AE9065D0064DC69 /* Camera3D.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
-				F528A1761AE9065D0064DC69 /* HelloWorldScene.cpp in Sources */,
+				F528A1761AE9065D0064DC69 /* OctreeTest.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				F528A1781AE9065D0064DC69 /* Octree.cpp in Sources */,
 			);
@@ -482,7 +482,7 @@
 				F528A17B1AE9065D0064DC69 /* Player.cpp in Sources */,
 				F528A1731AE9065D0064DC69 /* CameraControl.cpp in Sources */,
 				F528A1711AE9065D0064DC69 /* Camera3D.cpp in Sources */,
-				F528A1771AE9065D0064DC69 /* HelloWorldScene.cpp in Sources */,
+				F528A1771AE9065D0064DC69 /* OctreeTest.cpp in Sources */,
 				F528A16F1AE9065D0064DC69 /* AppDelegate.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				F528A1791AE9065D0064DC69 /* Octree.cpp in Sources */,
@@ -567,9 +567,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -600,9 +600,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = mac/Prefix.pch;

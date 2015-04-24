@@ -1,4 +1,4 @@
-#include "HelloWorldScene.h"
+#include "OctreeTest.h"
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
 #include "Camera3D.h"
@@ -7,13 +7,13 @@
 
 using namespace cocostudio::timeline;
 
-Scene* HelloWorld::createScene()
+Scene* OctreeTest::createScene()
 {
     // 'scene' is an autorelease object
     auto scene = Scene::create();
     
     // 'layer' is an autorelease object
-    auto layer = HelloWorld::create();
+    auto layer = OctreeTest::create();
 
     // add layer as a child to scene
     scene->addChild(layer);
@@ -23,7 +23,7 @@ Scene* HelloWorld::createScene()
 }
 
 // on "init" you need to initialize your instance
-bool HelloWorld::init()
+bool OctreeTest::init()
 {
     //////////////////////////////
     // 1. super init first
@@ -40,7 +40,7 @@ bool HelloWorld::init()
     return true;
 }
 
-void HelloWorld::initCamera()
+void OctreeTest::initCamera()
 {
     auto size = Director::getInstance()->getWinSize();
     _camera = Camera3D::create(60.f, size.width / size.height, 0.1f, 1000.f);
@@ -64,7 +64,7 @@ void HelloWorld::initCamera()
     _labelRot->setPosition(Vec2(0, 130));
 }
 
-void HelloWorld::initGrid()
+void OctreeTest::initGrid()
 {
     _drawNode = DrawNode3D::create();
     _drawNode->setCameraMask(2);
@@ -118,7 +118,7 @@ void HelloWorld::initGrid()
     }
 }
 
-void HelloWorld::initPlayers()
+void OctreeTest::initPlayers()
 {
     _octree.setAABB(AABB(Vec3(-5, 0, -5), Vec3(5, 10, 5)));
     for (int i=0; i<40; ++i)
@@ -133,7 +133,7 @@ void HelloWorld::initPlayers()
 
 }
 
-void HelloWorld::update(float delta)
+void OctreeTest::update(float delta)
 {
     auto pos = _camera->getPosition3D();
     _labelPos->setString(CCString::createWithFormat("%.2f,%.2f,%.2f", pos.x, pos.y, pos.z)->getCString());
@@ -147,16 +147,12 @@ void HelloWorld::update(float delta)
     
     for (int i=0; i<_players.size(); ++i)
     {
-        _players[i]->setHit(false);
+        _players[i]->setSelected(false);
     }
     
     for (int i=0; i<players.size(); ++i)
     {
-        ((Player*)players[i])->setHit(true);
-    }
-    for (int i=0; i<_players.size(); ++i)
-    {
-        _players[i]->setFlash(_players[i]->getHit());
+        ((Player*)players[i])->setSelected(true);
     }
     
     

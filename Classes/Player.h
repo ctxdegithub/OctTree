@@ -20,6 +20,7 @@ public:
     bool init();
     virtual void setPosition3D(const Vec3 &position);
     void setFlash(bool bFlash);
+    void setSelected(bool bSel);
     
 private:
     CC_SYNTHESIZE(Vec3, _size, Size);

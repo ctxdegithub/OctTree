@@ -9,7 +9,7 @@ class Camera3D;
 class DrawNode3D;
 class CameraControl;
 
-class HelloWorld : public cocos2d::Layer
+class OctreeTest : public cocos2d::Layer
 {
 public:
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
@@ -19,7 +19,7 @@ public:
     virtual bool init();
 
     // implement the "static create()" method manually
-    CREATE_FUNC(HelloWorld);
+    CREATE_FUNC(OctreeTest);
     
     void update(float delta);
     

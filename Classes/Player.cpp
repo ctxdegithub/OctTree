@@ -48,3 +48,15 @@ void Player::setFlash(bool bFlash)
         setVisible(true);
     }
 }
+
+void Player::setSelected(bool bSel)
+{
+    if (bSel)
+    {
+        _sprite->setColor(Color3B::RED);
+    }
+    else
+    {
+        _sprite->setColor(Color3B::WHITE);
+    }
+}
